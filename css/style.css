@@ -90,3 +90,394 @@ a {
     font-size: 1rem;
   }
 }
+
+.page-content {
+  padding-top: 42px;
+  padding-bottom: 56px;
+}
+
+.page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 5px;
+  color: var(--primary);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.page-heading h1 {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.page-description {
+  margin-top: 8px;
+  color: var(--text-muted);
+}
+
+.button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font: inherit;
+  font-size: .92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.button-primary:hover {
+  background: #4338ca;
+  color: #fff;
+}
+
+.button-secondary {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.button-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.form-panel {
+  max-width: 680px;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-panel h2 {
+  margin-bottom: 22px;
+  font-size: 1.1rem;
+}
+
+.field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 19px;
+  color: var(--text);
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea,
+.field select,
+.search-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: .95rem;
+}
+
+.field textarea {
+  min-height: 108px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus,
+.search-field input:focus {
+  border-color: var(--primary);
+  outline: 3px solid rgba(79, 70, 229, .13);
+}
+
+.field input::placeholder,
+.field textarea::placeholder,
+.search-field input::placeholder {
+  color: #94a3b8;
+}
+
+.required-mark {
+  color: #dc2626;
+}
+
+.optional-label {
+  margin-left: 5px;
+  color: var(--text-muted);
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.field-row,
+.form-actions,
+.task-toolbar,
+.task-summary,
+.task-card,
+.task-card-main,
+.task-card-actions {
+  display: flex;
+  align-items: center;
+}
+
+.field-row {
+  gap: 18px;
+}
+
+.form-actions {
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.form-message {
+  min-height: 22px;
+  margin: -5px 0 10px;
+  color: #15803d;
+  font-size: .9rem;
+}
+
+.task-toolbar {
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.search-field {
+  flex: 1;
+  max-width: 330px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.filter-button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background: #eef2ff;
+  color: var(--primary);
+}
+
+.task-summary {
+  justify-content: space-between;
+  padding: 17px 0 10px;
+  color: var(--text-muted);
+  font-size: .88rem;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+}
+
+.task-card {
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.task-card-main {
+  min-width: 0;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.task-check {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  margin-top: 3px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.task-title {
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.task-description {
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: .9rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 9px;
+}
+
+.task-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: #f1f5f9;
+  color: var(--text-muted);
+  font-size: .75rem;
+}
+
+.task-tag.priority-high {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.task-tag.priority-low {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.task-card.is-completed .task-title {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.task-card-actions {
+  flex: 0 0 auto;
+  gap: 7px;
+}
+
+.icon-button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.empty-state {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-state[hidden] {
+  display: none;
+}
+
+.empty-state strong {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.empty-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    padding-top: 28px;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-panel {
+    padding: 20px 16px;
+  }
+
+  .field-row,
+  .task-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .search-field {
+    max-width: none;
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+  }
+
+  .filter-button {
+    flex: 1 0 auto;
+    padding: 8px;
+  }
+
+  .task-card {
+    align-items: flex-start;
+    padding: 14px 12px;
+  }
+
+  .task-card-actions {
+    padding-top: 0;
+  }
+}
