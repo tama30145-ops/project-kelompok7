@@ -18,5 +18,40 @@
       </nav>
     </div>
   </header>
+  <main class="container page-content">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">RUANG KERJA PRIBADI</p>
+        <h1>Daftar task</h1>
+        <p class="page-description">Atur fokusmu dan tandai pekerjaan yang sudah selesai.</p>
+      </div>
+      <a class="button button-primary" href="add.html">+ Tambah task</a>
+    </section>
+
+    <section class="task-toolbar" aria-label="Filter task">
+      <label class="search-field" for="task-search">
+        <span class="visually-hidden">Cari task</span>
+        <input id="task-search" type="search" placeholder="Cari task..." />
+      </label>
+      <div class="filter-tabs" role="group" aria-label="Tampilkan task">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Semua</button>
+        <button class="filter-button" type="button" data-filter="active" aria-pressed="false">Belum selesai</button>
+        <button class="filter-button" type="button" data-filter="completed" aria-pressed="false">Selesai</button>
+      </div>
+    </section>
+
+    <section class="task-summary" aria-live="polite">
+      <span id="task-count">0 task</span>
+      <span id="task-progress">0 selesai</span>
+    </section>
+    <section class="task-list" id="task-list" aria-label="Daftar task"></section>
+    <p class="empty-state" id="empty-state" hidden>
+      <span class="empty-mark" aria-hidden="true">✓</span>
+      <strong id="empty-title">Belum ada task</strong>
+      <span id="empty-description">Tambahkan task pertama untuk mulai mengatur harimu.</span>
+      <a class="button button-primary" href="add.html">Tambah task</a>
+    </p>
+  </main>
+  <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -18,5 +18,52 @@
       </nav>
     </div>
   </header>
+  <main class="container page-content">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">RUANG KERJA PRIBADI</p>
+        <h1>Tambah task</h1>
+        <p class="page-description">Catat hal berikutnya yang ingin kamu selesaikan.</p>
+      </div>
+      <a class="button button-secondary" href="tasks.html">Lihat semua task</a>
+    </section>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <h2 id="form-title">Detail task</h2>
+      <form id="task-form">
+        <label class="field" for="task-title">
+          <span>Nama task <span class="required-mark">*</span></span>
+          <input id="task-title" name="title" type="text" maxlength="100" placeholder="Contoh: Siapkan presentasi" required />
+        </label>
+
+        <label class="field" for="task-description">
+          <span>Catatan <span class="optional-label">Opsional</span></span>
+          <textarea id="task-description" name="description" rows="4" maxlength="500" placeholder="Tambahkan detail yang perlu diingat"></textarea>
+        </label>
+
+        <div class="field-row">
+          <label class="field" for="task-due-date">
+            <span>Tenggat</span>
+            <input id="task-due-date" name="dueDate" type="date" />
+          </label>
+          <label class="field" for="task-priority">
+            <span>Prioritas</span>
+            <select id="task-priority" name="priority">
+              <option value="normal">Normal</option>
+              <option value="high">Tinggi</option>
+              <option value="low">Rendah</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        <div class="form-actions">
+          <a class="button button-secondary" href="tasks.html">Batal</a>
+          <button class="button button-primary" type="submit">Simpan task</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
