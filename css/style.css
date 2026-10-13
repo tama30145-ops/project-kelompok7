@@ -328,7 +328,7 @@ h2 {
 }
 
 .delete-task:hover {
-  background: #fff1f2;
+  background: #b1c5e9;
   color: #be123c;
 }
 
@@ -370,14 +370,14 @@ input, #form-tugas select, .filter-label select {
   padding: 9px 11px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: #fff;
+  background: #e5e5ed;
   color: var(--text);
   font: inherit;
   font-size: .9rem;
 }
 
 input::placeholder {
-  color: #94a3b8;
+  color: #b4bdca;
 }
 
 .button-full {
@@ -402,7 +402,7 @@ input::placeholder {
 
 .about-hero {
   padding: clamp(24px, 5vw, 48px);
-  background: linear-gradient(135deg, #fff 0%, #eef2ff 100%);
+  background: linear-gradient(135deg, #c4bcbc 0%, #c1c4cc 100%);
 }
 
 .about-hero h1 {
@@ -586,12 +586,12 @@ input::placeholder {
 
 .button-primary {
   background: var(--primary);
-  color: #fff;
+  color: #b99e9e;
 }
 
 .button-primary:hover {
-  background: #4338ca;
-  color: #fff;
+  background: #534d96;
+  color: #baa6a6;
 }
 
 .button-secondary {
