@@ -130,7 +130,7 @@ if (taskForm) {
   filter.addEventListener("change", renderTasks);
   renderTasks();
 }
-=======
+
 function readTasks() {
 	try {
 		const tasks = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");

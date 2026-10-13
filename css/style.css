@@ -540,6 +540,7 @@ input::placeholder {
   padding-top: 42px;
   padding-bottom: 56px;
 }
+  }
 
 .page-heading {
   display: flex;
@@ -925,4 +926,5 @@ input::placeholder {
   .task-card-actions {
     padding-top: 0;
   }
+}
 }
